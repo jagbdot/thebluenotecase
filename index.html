@@ -3,13 +3,15 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Animated Custom Cursor Effect | Demo 1 | Codrops</title>
+		<title>Animated Custom Cursor Effect | Demo 2 | Codrops</title>
 		<meta name="description" content="Some SVG filter effects for custom mouse cursors.">
 		<meta name="keywords" content="svg filter, custom cursor, distortion, animation, effect, interactive, web, frontend">
 		<meta name="author" content="Codrops">
 		<link rel="shortcut icon" href="favicon.2e5f6236.ico">
+		<link rel="stylesheet" href="https://use.typekit.net/qhm2ggg.css">
 		<link rel="stylesheet" href="https://use.typekit.net/gdg8keg.css">
-		<link rel="stylesheet" type="text/css" href="demo1.566b1309.css">
+		<link rel="stylesheet" type="text/css" href="demo2.d2996e04.css">
+		<link rel="stylesheet" type="text/css" href="stylesheet.19b675cc.css">
 		<script>document.documentElement.className = "js";
 
 var supportsCssVars = function supportsCssVars() {
@@ -19,37 +21,41 @@ var supportsCssVars = function supportsCssVars() {
 };
 
 supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+		<style>@font-face {
+				font-family: 'messapiabold';
+				src: url('messapia-bold-webfont.105305f9.woff2') format('woff2'), url('messapia-bold-webfont.643eca3f.woff') format('woff');
+				font-weight: normal;
+				font-style: normal;
+			}</style>
 	</head>
 	<body>
 		<main>
 			<div class="frame">
-				<h1 class="frame__title">Animated Custom Cursor Effect</h1>
+				<h1 class="frame__title"><a href="https://thebluenotecase.com/">TBNC</a></h1>
 				<div class="frame__links">
-					<a href="https://tympanus.net/codrops/?p=48725">Article</a>
-					<a href="https://github.com/codrops/AnimatedCustomCursor/">GitHub</a>
 				</div>
-				<h3 class="frame__initials">C</h3>
+				<h3 class="frame__initials">Web</h3>
+				<div class="frame__about"><a href="about.html">About the author</a></div>
 				<div class="frame__demos">
-					<span>1</span>
-					<a href="index2.html">2</a>
-					<a href="index3.html">3</a>
-					<a href="index4.html">4</a>
+					<span>Showcase of web design proyects (UX/UI & development).</span>
 				</div>
+				<div class="frame__social"><a href="#">Work with me</a></div>
 			</div>
 			<div class="content">
-				<p>Hi, my name is Eddie and I am a <a>pragmatic</a> UI designer who has worked with dozens of <a>businesses</a> and some <a>non-profit</a> organizations. If you'd like me to help you with your next UI project, <a>let's talk</a>!</p>
+				<nav class="menu">
+					<a href="https://webdesign.thebluenotecase.com" class="menu__item new-label">Design Portfolio</a>
+				</nav>
 			</div>
 		</main>
-		<svg class="cursor" width="220" height="220" viewBox="0 0 220 220">
+		<svg class="cursor" width="140" height="140" viewBox="0 0 140 140">
 			<defs>
-				<filter id="filter-1" x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox">
-					<feTurbulence type="fractalNoise" baseFrequency="0" numOctaves="1" result="warp"></feTurbulence>
-					<feOffset dx="-30" result="warpOffset"></feOffset>
-					<feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warpOffset"></feDisplacementMap>
+				<filter id="filter-1" content="hola" x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox">
+					<feTurbulence type="fractalNoise" baseFrequency="0" numOctaves="10" result="warp"></feTurbulence>
+					<feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="60" in="SourceGraphic" in2="warp"></feDisplacementMap>
 				</filter>
 			</defs>
-			<circle class="cursor__inner" cx="110" cy="110" r="60"></circle>
+			<circle class="cursor__inner" cx="70" cy="70" r="60"></circle>
 		</svg>
-		<script src="js.4fb02aa3.js"></script>
+		<script src="about.225f79e6.js"></script>
 	</body>
 </html>
