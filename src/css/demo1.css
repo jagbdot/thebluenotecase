@@ -10,14 +10,18 @@
 
 body {
 	margin: 0;
-	--color-text: #c3654e;
+	--color-link: cornflowerblue;
+	--color-link-hover: #edbc64;
+	--color-content: black;
+	--color-text: black;
 	--color-bg: #f2e9e0;
-	--color-link: #000;
-	--color-link-hover: #040203;
-	--color-content: #040203;
 	--font-alt: freight-display-pro, serif;
 	color: var(--color-text);
 	background-color: var(--color-bg);
+	background-image: url(../img/48.jpg);
+	background-repeat: no-repeat;
+	background-position: 96% 9%;
+    background-size: auto 20vh;
 	font-family: soleil, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -48,9 +52,15 @@ a:focus {
 }
 
 .frame__title {
-	font-size: 1rem;
+	font-size: 0.8rem;
 	margin: 0 0 1rem;
-	font-weight: inherit;
+	font-weight: 600;
+	font-family: goldenbook;
+}
+
+.frame__title a{
+	color: black;
+	font-family: messapiabold !important;
 }
 
 .frame__links {
@@ -67,15 +77,16 @@ a:focus {
 }
 
 .frame__demos span {
-	font-weight: bold;
-	color: var(--color-link);
+	font-weight: 100;
+	color: black;
+	font-family: 'goldenbook';
 }
 
 .frame__initials {
-	font-family: var(--font-alt);
-	font-size: 1.5rem;
-	pointer-events: none;
-	line-height: 18px;
+	font-family: goldenbook;
+    font-size: 1.5rem;
+    pointer-events: none;
+    line-height: 18px;
 }
 
 .content {

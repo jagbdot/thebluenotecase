@@ -10,27 +10,27 @@
 
 body {
 	margin: 0;
-	--color-link: white;
-	--color-link-hover: rgb(237, 89, 31);
+	--color-link: cornflowerblue;
+	--color-link-hover: #edbc64;
 	--color-content: white;
-	--color-text: white;
-	--color-bg: black;
+	--color-text: black;
+	--color-bg: #f2e9e0;
 	--font-alt: messapiabold, sans-serif;
-	--color-menu-link: white;
-	--color-menu-link-hover: rgb(237, 89, 31);
-	background-image: url(../img/15.jpg);
+	--color-menu-link: black;
+	--color-menu-link-hover: cornflowerblue;
+	background-image: url(../img/48.jpg);
 	background-repeat: no-repeat;
-	background-position: 96% 10%;
-    background-size: auto 25vh;
+	background-position: 96% 9%;
+    background-size: auto 20vh;
 	color: var(--color-text);
 	background-color: var(--color-bg);
 	font-family: soleil, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	/* Cursor styles */
-	--cursor-fill: none;
-	--cursor-stroke: #60381e;
-	--cursor-stroke-width: 1px;
+	--cursor-fill: #dbe3e6;
+	--cursor-stroke: #dbe3e6;
+	--cursor-stroke-width: 0px;
 }
 
 a {
@@ -55,10 +55,15 @@ a:focus {
 }
 
 .frame__title {
-	font-size: 1rem;
+	font-size: 0.8rem;
 	margin: 0 0 1rem;
-	font-weight: inherit;
+	font-weight: 600;
 	font-family: goldenbook;
+}
+
+.frame__title a{
+	color: black;
+	font-family: messapiabold !important;
 }
 
 .frame__links {
@@ -72,12 +77,36 @@ a:focus {
 
 .frame__demos {
 	margin: 1rem 0;
+}
 
+.frame__about {
+	grid-area: about;
+	font-family: goldenbook;
+	font-size: 1.2rem;
+	font-weight: 600;
+	letter-spacing: 0.2px;
+}
+
+.frame__about a:hover{
+	color: cornflowerblue;
+}
+
+.frame__social {
+	grid-area: social;
+	text-align: right;
+	float: right;
+	font-family: goldenbook;
+	font-size: 1.2rem;
+	font-weight: 700;
+}
+
+.frame__social a:hover{
+	color: cornflowerblue;
 }
 
 .frame__demos span {
 	font-weight: 100;
-	color: var(--color-link);
+	color: black;
 	font-family: 'goldenbook';
 }
 
@@ -179,7 +208,7 @@ a:focus {
 		grid-template-rows: auto auto auto;
 		grid-template-areas: 'title initials links'
 							'... ... ...'
-							'... demos ...';
+							'about demos social';
 	}
 	.frame__title {
 		grid-area: title;
@@ -230,7 +259,8 @@ a:focus {
 	}
 	.cursor__inner {
 		fill: var(--cursor-fill);
-		stroke: white;
-		stroke-width: var(--cursor-stroke-width);
+		stroke: var(--cursor-fill);
+		stroke-width: 1px;
+		opacity: 0.9;
 	}
 }
