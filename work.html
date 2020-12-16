@@ -3,14 +3,14 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Web Design Portfolio</title>
+		<title>Animated Custom Cursor Effect | Demo 1 | Codrops</title>
 		<meta name="description" content="Some SVG filter effects for custom mouse cursors.">
 		<meta name="keywords" content="svg filter, custom cursor, distortion, animation, effect, interactive, web, frontend">
 		<meta name="author" content="Codrops">
 		<link rel="shortcut icon" href="favicon.8a29f6cd.ico">
 		<link rel="stylesheet" href="https://use.typekit.net/qhm2ggg.css">
 		<link rel="stylesheet" href="https://use.typekit.net/gdg8keg.css">
-		<link rel="stylesheet" type="text/css" href="demo2.0626daea.css">
+		<link rel="stylesheet" type="text/css" href="demo1.40a5834e.css">
 		<link rel="stylesheet" type="text/css" href="stylesheet.19b675cc.css">
 		<script>document.documentElement.className = "js";
 
@@ -35,27 +35,24 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 				<div class="frame__links">
 				</div>
 				<h3 class="frame__initials">Web</h3>
-				<div class="frame__about"><a href="about.html">About the author</a></div>
 				<div class="frame__demos">
-					<span>Showcase of web design proyects (UX/UI & development).</span>
+					<a href="https://thebluenotecase.com">back to home</a>
 				</div>
-				<div class="frame__social"><a href="work.html">Work with me</a></div>
 			</div>
 			<div class="content">
-				<nav class="menu">
-					<a href="https://webdesign.thebluenotecase.com" class="menu__item new-label">Design Portfolio</a>
-				</nav>
+				<p>Would be nice to meet you. If you want to talk personally just send an email to <a href="mailto:design@thebluenotecase.com?&subject=Hello!">design@thebluenotecase.com<a></a></a></p>
 			</div>
 		</main>
-		<svg class="cursor" width="140" height="140" viewBox="0 0 140 140">
+		<svg class="cursor" width="220" height="220" viewBox="0 0 220 220">
 			<defs>
-				<filter id="filter-1" content="hola" x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox">
-					<feTurbulence type="fractalNoise" baseFrequency="0" numOctaves="10" result="warp"></feTurbulence>
-					<feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="60" in="SourceGraphic" in2="warp"></feDisplacementMap>
+				<filter id="filter-1" x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox">
+					<feTurbulence type="fractalNoise" baseFrequency="0" numOctaves="1" result="warp"></feTurbulence>
+					<feOffset dx="-30" result="warpOffset"></feOffset>
+					<feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warpOffset"></feDisplacementMap>
 				</filter>
 			</defs>
-			<circle class="cursor__inner" cx="70" cy="70" r="60"></circle>
+			<circle class="cursor__inner" cx="110" cy="110" r="60"></circle>
 		</svg>
-		<script src="about.225f79e6.js"></script>
+		<script src="index3.c9e49617.js"></script>
 	</body>
 </html>
