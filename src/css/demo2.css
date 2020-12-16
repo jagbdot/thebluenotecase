@@ -284,7 +284,7 @@ body{
 .frame__demos {
     margin: 0;
     position: fixed;
-    bottom: 3em;
+    bottom: 2em;
     right: 0;
     left: 0;
     margin-right: auto;
@@ -302,6 +302,7 @@ body{
 
 .content p{
 	margin: 3em 0 !important;
+	font-size: 5vw;
 }
 
 .menu{
@@ -309,7 +310,7 @@ body{
 }
 
 .menu__item{
-    font-size: 6.6vw;
+    font-size: 7.6vw;
 }
 
 a.menu__item {

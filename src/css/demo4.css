@@ -226,6 +226,7 @@ a:focus {
 
 	.content p{
 		margin: 3em 0 !important;
+		font-size: 5vw;
 	}
 
 }
