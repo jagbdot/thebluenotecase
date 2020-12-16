@@ -251,6 +251,80 @@ font-family: 'messapiabold';
 	}
 }
 
+@media screen and (max-width: 53em) {
+
+body{
+	background-position: 50% 30%;
+}
+
+.frame__title{
+	font-size: 0.8rem;
+    display: inline-block;
+    margin: 0;
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+
+.frame__initials{
+    font-size: 0.8rem;
+    text-align: right;
+    width: 50%;
+    margin: 0;
+    float: left;
+    display: inline-block;
+    pointer-events: none;
+}
+
+.frame__about{
+	position: relative;
+    top: -1em;
+}
+
+.frame__demos {
+    margin: 0;
+    position: fixed;
+    bottom: 3em;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 2em;
+}
+
+.frame {
+    padding: 2rem 5vw;
+}
+
+.content{
+	height: none;
+}
+
+.content p{
+	margin: 3em 0 !important;
+}
+
+.menu{
+	margin: 31vh 0;
+}
+
+.menu__item{
+    font-size: 6.6vw;
+}
+
+a.menu__item {
+    color: cornflowerblue !important;
+}
+
+.frame__social {
+	grid-area: social;
+	text-align: center;
+	float: none;
+	font-size: 14px;
+}
+
+	}
+
 @media (any-pointer: fine) {
 	.cursor {
 		position: fixed;

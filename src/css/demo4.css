@@ -218,6 +218,18 @@ a:focus {
 	}
 }
 
+@media screen and (max-width: 53em) {
+
+	.content{
+		height: none;
+	}
+
+	.content p{
+		margin: 3em 0 !important;
+	}
+
+}
+
 @media (any-pointer: fine) {
 	.cursor {
 		position: fixed;

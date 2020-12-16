@@ -12,23 +12,25 @@ body {
 	margin: 0;
 	--color-link: cornflowerblue;
 	--color-link-hover: #edbc64;
-	--color-content: black;
+	--color-content: white;
 	--color-text: black;
 	--color-bg: #f2e9e0;
-	--font-alt: freight-display-pro, serif;
-	color: var(--color-text);
-	background-color: var(--color-bg);
+	--font-alt: messapiabold, sans-serif;
+	--color-menu-link: black;
+	--color-menu-link-hover: cornflowerblue;
 	background-image: url(48.a8dc10d8.jpg);
 	background-repeat: no-repeat;
 	background-position: 96% 9%;
     background-size: auto 20vh;
+	color: var(--color-text);
+	background-color: var(--color-bg);
 	font-family: soleil, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	/* Cursor styles */
-	--cursor-stroke: #c3654e;
-	--cursor-fill: none;
-	--cursor-stroke-width: 1px;
+	--cursor-fill: #dbe3e6;
+	--cursor-stroke: #dbe3e6;
+	--cursor-stroke-width: 0px;
 }
 
 a {
@@ -36,6 +38,7 @@ a {
 	color: var(--color-link);
 	outline: none;
 	cursor: pointer;
+
 }
 
 a:hover,
@@ -76,6 +79,33 @@ a:focus {
 	margin: 1rem 0;
 }
 
+.frame__about {
+	grid-area: about;
+	font-family: goldenbook;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 0.2px;
+}
+
+.frame__about a:hover{
+	color: cornflowerblue;
+}
+
+.frame__social {
+	grid-area: social;
+	text-align: right;
+	float: right;
+	font-family: goldenbook;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.frame__social a:hover{
+	color: cornflowerblue;
+}
+
 .frame__demos span {
 	font-weight: 100;
 	color: black;
@@ -83,10 +113,11 @@ a:focus {
 }
 
 .frame__initials {
-	font-family: goldenbook;
-    font-size: 1.5rem;
+font-family: 'messapiabold';
+    font-size: 0.8rem;
     pointer-events: none;
-    line-height: 18px;
+    text-transform: uppercase;
+    line-height: 17px;
 }
 
 .content {
@@ -180,7 +211,7 @@ a:focus {
 		grid-template-rows: auto auto auto;
 		grid-template-areas: 'title initials links'
 							'... ... ...'
-							'... demos ...';
+							'about demos social';
 	}
 	.frame__title {
 		grid-area: title;
@@ -193,14 +224,18 @@ a:focus {
 	    align-self: center;
 	}
 	.frame__demos {
-		margin: 0;
-		grid-area: demos;
-		justify-self: center;
+	    margin: 0;
+	    grid-area: demos;
+	    justify-self: center;
+	    width: 600px;
+	    text-align: center;
+	    font-size: 16px;
 	}
 	.frame__links {
-		grid-area: links;
-		padding: 0;
-		justify-self: end;
+	    grid-area: links;
+	    padding: 0;
+	    justify-self: end;
+	    font-family: 'goldenbook';
 	}
 	.frame__info {
 		grid-area: info;
@@ -216,6 +251,80 @@ a:focus {
 	}
 }
 
+@media screen and (max-width: 53em) {
+
+body{
+	background-position: 50% 30%;
+}
+
+.frame__title{
+	font-size: 0.8rem;
+    display: inline-block;
+    margin: 0;
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+
+.frame__initials{
+    font-size: 0.8rem;
+    text-align: right;
+    width: 50%;
+    margin: 0;
+    float: left;
+    display: inline-block;
+    pointer-events: none;
+}
+
+.frame__about{
+	position: relative;
+    top: -1em;
+}
+
+.frame__demos {
+    margin: 0;
+    position: fixed;
+    bottom: 3em;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 2em;
+}
+
+.frame {
+    padding: 2rem 5vw;
+}
+
+.content{
+	height: none;
+}
+
+.content p{
+	margin: 3em 0 !important;
+}
+
+.menu{
+	margin: 31vh 0;
+}
+
+.menu__item{
+    font-size: 6.6vw;
+}
+
+a.menu__item {
+    color: cornflowerblue !important;
+}
+
+.frame__social {
+	grid-area: social;
+	text-align: center;
+	float: none;
+	font-size: 14px;
+}
+
+	}
+
 @media (any-pointer: fine) {
 	.cursor {
 		position: fixed;
@@ -227,7 +336,8 @@ a:focus {
 	}
 	.cursor__inner {
 		fill: var(--cursor-fill);
-		stroke: var(--cursor-stroke);
-		stroke-width: var(--cursor-stroke-width);
+		stroke: var(--cursor-fill);
+		stroke-width: 1px;
+		opacity: 0.9;
 	}
 }
