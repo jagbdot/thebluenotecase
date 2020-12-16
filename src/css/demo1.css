@@ -226,6 +226,19 @@ a:focus {
 	.content p{
 		margin: 3em 0 !important;
 		font-size: 5vw;
+		max-width: 90vw;
+	}
+
+	.frame__title{
+		text-align: left;
+	}
+
+	.frame__initials{
+		text-align: left;
+	}
+
+	.frame__demos{
+		text-align: left;
 	}
 
 	}
