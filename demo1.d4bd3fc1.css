@@ -229,6 +229,10 @@ a:focus {
 		max-width: 90vw;
 	}
 
+	.frame{
+		padding: 8vh 5vw;
+	}
+
 	.frame__title{
 		text-align: left;
 	}
