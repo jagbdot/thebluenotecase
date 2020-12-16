@@ -254,7 +254,7 @@ font-family: 'messapiabold';
 @media screen and (max-width: 53em) {
 
 body{
-	background-position: 50% 30%;
+	background-position: 50% 29vh;
 }
 
 .frame__title{
@@ -284,7 +284,7 @@ body{
 .frame__demos {
     margin: 0;
     position: fixed;
-    bottom: 2em;
+    bottom: 1.5em;
     right: 0;
     left: 0;
     margin-right: auto;
@@ -297,16 +297,17 @@ body{
 }
 
 .content{
-	height: none;
+	height: 70vh !important;
 }
 
 .content p{
-	margin: 3em 0 !important;
+	margin: 12vh 0 !important;
 	font-size: 5vw;
 }
 
 .menu{
 	margin: 31vh 0;
+	overflow: inherit;
 }
 
 .menu__item{
