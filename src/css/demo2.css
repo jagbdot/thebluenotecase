@@ -249,12 +249,28 @@ font-family: 'messapiabold';
 		height: 100vh;
 		justify-content: center;
 	}
+
+	.responsive{
+		display: none;
+	}
+
+	.desktop{
+		display: inline;
+	}
 }
 
 @media screen and (max-width: 53em) {
 
+.responsive{
+	display: inline;
+}
+
+.desktop{
+	display: none;
+}
+
 body{
-	background-position: 50% 29vh;
+	background-position: 50% 21vh;
 }
 
 .frame__title{
@@ -306,7 +322,7 @@ body{
 }
 
 .menu{
-	margin: 31vh 0;
+	margin: 28vh 0;
 	overflow: inherit;
 }
 
