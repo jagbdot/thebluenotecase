@@ -1,7 +1,7 @@
 {
-  "name": "AnimatedCustomCursor",
+  "name": "Thebluenotecase",
   "version": "1.0.0",
-  "description": "",
+  "description": "Showcase of web design proyects (UX/UI & development).",
   "main": "index.js",
   "homepage": "https://jagbdot.github.io/thebluenotecase/",
   "scripts": {
@@ -16,9 +16,9 @@
     "url": "git://github.com/codrops/AnimatedCustomCursor.git"
   },
   "keywords": [],
-  "author": "Codrops",
+  "author": "Juan Antonio G.B",
   "license": "MIT",
-  "homepage": "https://tympanus.net/Development/AnimatedCustomCursor/",
+  "homepage": "https://thebluenotecase.com",
   "bugs": {
     "url": "https://github.com/codrops/AnimatedCustomCursor/issues"
   },
